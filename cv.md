@@ -1,13 +1,13 @@
 # Anton Novikov
 ![Anton Novikov](https://topgain.by/img/team/a_novikov.jpg "Hi, it's me")
-***
+
 
 ## Contact info
-- [**Belarus, Minsk**] (https://www.google.com/maps/@53.9058035,27.5683557,11.65z/data=!5m1!1e1?hl=ru-RU)
-- **phone:** [+375293483778](tel:+375293483778)
+- **Belarus, Minsk**
+- **phone:** +375293483778
 - **email:** [3483778@gmail.com](mailto:3483778@gmail.com)
 - **discord:** Anton Novikov (@anton-evol)
-- **github:** [anton-evol] (https://github.com/anton-evol/)
+- **github:** [anton-evol](https://github.com/anton-evol/)
 
 
 ## Summary
@@ -30,7 +30,7 @@ My English level regarding to few different tests is between B1 and B2 (and some
 
 ## Code expample
 
-There is an example of solved kata from Codewars:
+Here is an example of solved kata from Codewars:
 ````
 function XO(str) {
   return (str.toLowerCase().split("x").length == str.toLowerCase().split("o").length);
