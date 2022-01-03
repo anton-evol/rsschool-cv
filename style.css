@@ -1,1 +1,142 @@
-/*empty file*/
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container nav{
+    border-bottom: 2px solid #075094;
+    border-radius: 20px 20px 20px 20px;
+    margin: 1%;margin-bottom: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.nav-list li{
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.nav-item a {
+    color: #075094;
+    text-decoration: none;  
+    transition: color 0.3s;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  transition: .3s;
+}
+
+.nav-link:hover {
+    text-decoration: overline;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 44%;
+  padding: 2%;
+  margin: 1%;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #075094;
+  border-top: 2px solid #075094;
+  border-radius: 20px 20px 20px 20px;
+}
+.section ul li{
+    color: #075094;
+}
+
+.section ul li span{
+    font-weight: 600;
+    color: #161616;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #075094;
+}
+
+h4.section-title {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-top: -23px;
+    color: #075094;
+}
+
+.section img{
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: #075094;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #d3ab29;
+}
+
+ul li {
+    list-style-type: circle;
+  }
+
+.code{
+    font-size: 80%;
+    white-space: pre-line;
+    background-color: rgba(200, 200, 200, 0.322);
+    display: block;
+}
+
+.footer a, .footer p{
+    color: #161616;
+    font-size: 25px;
+}
+
+.footer .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+    
+  }

@@ -4,9 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://topgain.by/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <title>Anton Novikov CV</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact_info">Contact info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Summary">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Code_expample">Code expample</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Current_project">Current project</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section" id="profile">
+                <h1 class="section-title">Anton Novikov</h1>
+                <h4 class="section-title">Junior front-end developer</h4>
+                <img src="https://topgain.by/img/team/a_novikov2.jpg " alt="Hi, it's me" width="200" height="200">                
+            </section>
+            <section class="section" id="Contact_info">
+                <h2 class="section-title">Contact info</h2>
+                <ul>
+                    <li>
+                        <span>Place: </span>Belarus, Minsk
+                    </li>
+                    <li>
+                        <span>Phone: </span><a href="tel:+375293483778">+375 29 348-37-78</a>
+                    </li>
+                    <li>
+                        <span>Email: </span><a href="mailto:3483778@gmail.com">3483778@gmail.com</a>
+                    </li>
+                    <li>
+                        <span>Discord: </span>Anton Novikov (@anton-evol)
+                    </li>
+                    <li>
+                        <span>GitHub: </span><a href="https://github.com/anton-evol/" target="_blank">anton-evol</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="Summary">
+                <h2 class="section-title">Summary</h2>
+                <p>
+                    I am currently working as a brand-manager of warehouse trucks and power solutions in procurement department of biggest official distributor one of the largest automotive companies in the world. I'm aiming to learn programming becouse it becomes my passion and hobby now. I like to optimize common routine, make things better, search in process repeating patterns and automate them becous it save a lot of time, money and prevent of making mistakes.
+                </p>
+            </section>
+            <section class="section" id="Skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>JS</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                    <li>VBA</li>
+                </ul>
+                <p>
+                   I'm trying to apply some basic JS skills in vba programming for ms excel. When I'm implementing some features for productivity and comfort it brings a lot of positive users expirence and satisfaction.
+                   <br>Earlier I made a couple totally new versions of consulting company website (each one was placed on hosting for a rather long period of time). This website doesn't need to have any extraordinary features but last revision uses bootstrap 4, Font Awesome, connection to yandex/google/fb statistic, have a couple of js and php scripts, php page composing, connection to db, and simple handmade integration to amoCRM (and a lot of other what have been forgotten).
+                </p>
+            </section>
+            <section class="section" id="Education">
+                <h2 class="section-title">Education</h2>
+                <p>
+                    My first education was a cook. We were studing how to cook and how to organize whole technological process in any kind of restaurant. We were teached to work with reciepts, financial data and legislation. After finishing I was working in different places about 4-5 years (as a line-cook and as Cheef). One cafe was opened totally under my leadership.
+                    <br>I changed my occupation for a procurement department. It was premium sanitary equipment from the top european brands. And after a couple of years I went to procurement of engineer sanitary equipment. It was a very intersting time because we need to perfectly understand all of suggested products and keep in mind all differencies.
+                    <br>And the last position is a brand-manager of warehouse trucks and energy solutions.
+                    <br>My English level regarding to few different tests is between B1 and B2 (and sometime in good mood i feel it is up to C1:-)). Every day I'm writing common work mails in France, Italy, Sweeden, Germany, Netherlands and there was no problems in understanding each other (but often I realize that their english is much worst than mine).
+                </p>
+            </section>
+            <section class="section" id="Code_expample">
+                <h2 class="section-title">Code expample</h2>
+                <p>
+                    Here is an example of solved kata from Codewars:
+                </p>
+                <code class="code">function XO(str) {
+                return (str.toLowerCase().split("x").length == str.toLowerCase().split("o").length);
+                }
+                </code>
+                <p>
+                    All other solved kata can be found in my account at <a href="https://www.codewars.com/users/anton-evol/completed_solutions" target="_blank">Codewars</a>.
+                    <br>Please note you can see it only if you have access to Codewars.        
+                </p>
+            </section>
+            <section class="section" id="Current_project">
+                <h2 class="section-title">Current project</h2>
+                <p>
+                    At present time I'm working on this CV and publishing it to GitHub.
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="https://github.com/anton-evol/" target="_blank">My GitHub</a>
+            <p>2022</p>
+            <a href="https://rs.school/js/" target="_blank"><img src="https://rs.school/images/rs_school_js.svg" alt="rsschool logo" height="40"></a>
+        </div>
+    </footer>
 </body>
 </html>
