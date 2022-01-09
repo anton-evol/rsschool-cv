@@ -301,16 +301,107 @@ button {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  padding-top: 60px;
 }
 
 .portfolio-img img {
   width: 450px;
   height: 560px;
+  margin: 0;
 }
 
-.wedding-video-wrapper{
-    
+.wedding-video-wrapper {
+    background-image: url("./assets/video/video-player.jpg");
+    background-repeat: no-repeat;
+    width: 1400px;
+    height: 705px;
+    position: relative;
 }
+.wedding-video-wrapper:after {
+    content: "";
+    width: 130px;
+    height: 130px;
+    background: url("./assets/svg/Play_Unvisited.svg") no-repeat;
+    position: absolute;
+    top: calc(50% - 65px);
+    left: calc(50% - 64px);
+}
+
+.wedding-video-wrapper:hover::after {
+    content: "";
+    width: 130px;
+    height: 130px;
+    background: url("./assets/svg/Play_hover.svg") no-repeat;
+    position: absolute;
+    top: calc(50% - 65px);
+    left: calc(50% - 64px);
+    cursor: pointer;
+}
+/*todo something wrong with playbutton*/
+
+
+.price-items-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .price-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    background-position: center top;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 450px;
+    padding: 0 20px;
+    text-align: center;
+    border: 2px var(--color-gold) solid;
+  }
+  
+  .price-title {
+    font-family: Merriweather;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 42px;
+    margin: 0;
+    color: var(--color-white);
+  }
+  
+  .price-amount {
+    font-family: Merriweather;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    color: var(--color-gold);
+  }
+
+  .price-desc {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    white-space: pre-line;
+    margin: 20px 0;
+  }
+
+  .price-item button {
+      margin: 20px 0 40px;
+  }
 /* MAIN styles end */
 /* FOOTER styles start */
 
