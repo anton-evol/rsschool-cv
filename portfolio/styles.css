@@ -11,8 +11,6 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: rgba(30, 30, 26, 0.491);
-  /* todo remove bcg color*/
 }
 
 * {
@@ -24,6 +22,7 @@ body {
   font-weight: 400;
   color: var(--color-white);
   margin: 0;
+  background-color: var(--color-black);
 }
 
 .container {
@@ -33,21 +32,55 @@ body {
 }
 
 .section {
-  
+    padding-bottom: 100px;
 }
 
-h1,
-h2 {
-    font-family: Merriweather;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-color: var(--color-gold);
-line-height: 80px;
-letter-spacing: 0em;
-text-align: center;
+h1 {
+  font-family: Merriweather;
+  font-size: var(--font-size1);
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 120px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 160px;
   margin: 0;
   padding-bottom: 10px;
+}
+
+h2 {
+  font-family: Merriweather;
+  font-size: var(--font-size2);
+  font-weight: 700;
+  color: var(--color-gold);
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+h2::before,
+h2::after {
+  content: "";
+  border-top: 2px solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+h2:after {
+  margin: 0 0 0 20px;
+}
+
+.section-title-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -57,26 +90,32 @@ a {
 }
 
 button {
-    font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: 0em;
-text-align: center;
-cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+  border: none;
 }
 
 .btn-gold {
-    width: 220px;
-    height: 55px;
-    background-color: var(--color-gold);
-    border: none;
+  width: 220px;
+  height: 55px;
+  background-color: var(--color-gold);
 }
 
 .btn-gold:hover {
-    color: var(--color-white);
+  color: var(--color-white);
   transition: 0.3s;
+}
+
+.btn-black {
+  width: 220px;
+  height: 55px;
+  background-color: transparent;
 }
 
 /* HEADER styles start */
@@ -149,36 +188,93 @@ cursor: pointer;
   background-repeat: no-repeat;
   width: 1440px;
   margin: 0 auto;
-  padding: 0 80px 100px;
-}
-
-.hero-container .section-title {
-  font-size: var(--font-size1);
-  font-weight: 700;
-  color: var(--color-white);
-  line-height: 120px;
-  letter-spacing: 0em;
-  text-align: left;
-  padding-top: 160px;
+  padding: 0 80px;
 }
 
 .slogan {
-    font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: 0em;
-text-align: left;
-margin: 0;
-max-width: 480px;
-padding-bottom: 25px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  max-width: 480px;
+  padding-bottom: 25px;
 }
 
 .hero-container .btn-gold {
-    margin-bottom: 330px;
+  margin-bottom: 330px;
 }
 
+.skills-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-position: center top;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 320px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.skills-items:nth-child(1) {
+  background-image: url("./assets/svg/camera 1.svg");
+  background-size: auto 50px;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+}
+.skills-items:nth-child(2) {
+    background-image: url("./assets/svg/video 1.svg");
+    background-size: auto 50px;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+  }
+.skills-items:nth-child(3) {
+    background-image: url("./assets/svg/image 1.svg");
+    background-size: auto 50px;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+  }
+.skills-items:nth-child(4) {
+    background-image: url("./assets/svg/mic 1.svg");
+    background-size: auto 50px;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+  }
+
+.skill-title {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 0px;
+}
+
+.skill-desc {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
 
 
 /* MAIN styles end */
