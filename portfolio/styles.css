@@ -412,7 +412,7 @@ button {
   background-repeat: no-repeat;
   width: 1440px;
   height: 700px;
-  margin: 100px auto;
+  margin: 100px auto 0;
 }
 
 .contacts-container .section {
@@ -478,5 +478,40 @@ button {
 
 /* MAIN styles end */
 /* FOOTER styles start */
+
+.footer-container{
+  display: flex;
+  height: 150px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: row; */
+}
+
+.year {
+  padding: 0 15px;
+}
+
+.school{
+  padding-left: 40px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links img{
+  /* height: 32px; */
+  /* width: 32px; */
+  /* margin-left: 20px; */
+  padding-top: 20px;
+  padding-left: 20px;
+}
 
 /* FOOTER styles end */
