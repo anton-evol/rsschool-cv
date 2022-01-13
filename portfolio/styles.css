@@ -65,16 +65,20 @@ h2 {
   padding-bottom: 60px;
 }
 
-h2::before,
-h2::after {
+.section-title::before {
   content: "";
   border-top: 2px solid;
-  margin: 0 20px 0 0;
+  margin: 0 20px 0 0px;
   flex: 1 0 20px;
 }
-
-h2:after {
-  margin: 0 0 0 20px;
+.section-title::after {
+  content: "";
+  border-top: 2px solid;
+  margin: 0 0px 0 20px;
+  flex: 1 0 20px;
+}
+.section-title-hero::after {
+  margin: 0 0 0 0;
 }
 
 .section-title-wrapper {
@@ -186,7 +190,7 @@ button {
   padding: 8px;
 }
 
-.l ang-change a {
+.lang-change a {
   padding: 0;
 }
 /* HEADER styles end */
@@ -311,97 +315,167 @@ button {
 }
 
 .wedding-video-wrapper {
-    background-image: url("./assets/video/video-player.jpg");
-    background-repeat: no-repeat;
-    width: 1400px;
-    height: 705px;
-    position: relative;
+  background-image: url("./assets/video/video-player.jpg");
+  background-repeat: no-repeat;
+  width: 1400px;
+  height: 705px;
+  position: relative;
 }
 .wedding-video-wrapper:after {
-    content: "";
-    width: 130px;
-    height: 130px;
-    background: url("./assets/svg/Play_Unvisited.svg") no-repeat;
-    position: absolute;
-    top: calc(50% - 65px);
-    left: calc(50% - 64px);
+  content: "";
+  width: 130px;
+  height: 130px;
+  background: url("./assets/svg/Play_Unvisited.svg") no-repeat;
+  position: absolute;
+  top: calc(50% - 65px);
+  left: calc(50% - 64px);
 }
 
 .wedding-video-wrapper:hover::after {
-    content: "";
-    width: 130px;
-    height: 130px;
-    background: url("./assets/svg/Play_hover.svg") no-repeat;
-    position: absolute;
-    top: calc(50% - 65px);
-    left: calc(50% - 64px);
-    cursor: pointer;
+  content: "";
+  width: 130px;
+  height: 130px;
+  background: url("./assets/svg/Play_hover.svg") no-repeat;
+  position: absolute;
+  top: calc(50% - 65px);
+  left: calc(50% - 64px);
+  cursor: pointer;
 }
-/*todo something wrong with playbutton*/
-
+/*todo - something wrong with playbutton*/
 
 .price-items-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .price-item {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    background-position: center top;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    width: 450px;
-    padding: 0 20px;
-    text-align: center;
-    border: 2px var(--color-gold) solid;
-  }
-  
-  .price-title {
-    font-family: Merriweather;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding-top: 42px;
-    margin: 0;
-    color: var(--color-white);
-  }
-  
-  .price-amount {
-    font-family: Merriweather;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding-top: 20px;
-    margin: 0;
-    color: var(--color-gold);
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  .price-desc {
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: center;
-    white-space: pre-line;
-    margin: 20px 0;
-  }
+.price-item {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  background-position: center top;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 450px;
+  padding: 0 20px;
+  text-align: center;
+  border: 2px var(--color-gold) solid;
+}
 
-  .price-item button {
-      margin: 20px 0 40px;
-  }
+.price-title {
+  font-family: Merriweather;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 42px;
+  margin: 0;
+  color: var(--color-white);
+}
+
+.price-amount {
+  font-family: Merriweather;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+  color: var(--color-gold);
+}
+
+.price-desc {
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  white-space: pre-line;
+  margin: 20px 0;
+}
+
+.price-item button {
+  margin: 20px 0 40px;
+}
+
+.contacts-container {
+  background-image: url("./assets/img/contacts.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1440px;
+  height: 700px;
+  margin: 100px auto;
+}
+
+.contacts-container .section {
+  width: 50%;
+  margin-left: auto;
+  padding: 60px 20px 0px 27px;
+}
+.contacts-title {
+  font-family: Merriweather;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0;
+}
+
+.send-form {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0 0 223px;
+}
+
+.send-form input,
+.send-form textarea {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color-gold);
+  border: 3px var(--color-gold) solid;
+  width: 450px;
+  height: 50px;
+  margin-top: 20px;
+  resize: none;
+  padding-left: 17px;
+}
+
+.send-form textarea {
+  height: 100px;
+}
+
+
+.send-form input::placeholder {
+  font-family: inherit;
+  font-size: 20px;
+  color: var(--color-gold);
+}
+
+.send-form textarea::placeholder {
+  font-family: inherit;
+  color: var(--color-gold);
+  margin-left: 0;
+}
+
+.send-form button {
+  margin: 27px 0 0 -230px;
+}
+
 /* MAIN styles end */
 /* FOOTER styles start */
 
