@@ -143,6 +143,21 @@ button {
   display: flex;
 }
 
+.header-container svg{
+  width: 50px;
+  height: 50px;
+  /* padding-top: 15px; */
+  margin: 20px 0 0 0;
+  fill: var(--color-white);
+  text-align: left;
+  /* line-height: 50px; */
+}
+
+.header-container svg:hover{
+  fill: var(--color-gold);
+  transition: .3s;
+}
+
 .nav-list {
   display: flex;
   justify-content: flex-end;
@@ -306,6 +321,7 @@ button {
   align-items: center;
   gap: 25px;
   padding-top: 60px;
+  border-image: none;
 }
 
 .portfolio-img img {
@@ -321,27 +337,32 @@ button {
   height: 705px;
   position: relative;
 }
-.wedding-video-wrapper:after {
-  content: "";
+
+.play-btn {
+  background-color: transparent;
+  fill: var(--color-white);
+  border: none;
   width: 130px;
   height: 130px;
-  background: url("./assets/svg/Play_Unvisited.svg") no-repeat;
+  padding: 0;
   position: absolute;
-  top: calc(50% - 65px);
-  left: calc(50% - 64px);
+  top: calc(705px / 2 - 65px);
+  left: calc(1400px / 2 - 65px);
 }
 
-.wedding-video-wrapper:hover::after {
-  content: "";
+.play-btn:hover {
+  fill: var(--color-gold);
+  transition: .3s;
+}
+
+.play-btn:active {
+  display: none;
+}
+
+.play-btn .icon{
   width: 130px;
   height: 130px;
-  background: url("./assets/svg/Play_hover.svg") no-repeat;
-  position: absolute;
-  top: calc(50% - 65px);
-  left: calc(50% - 64px);
-  cursor: pointer;
 }
-/*todo - something wrong with playbutton*/
 
 .price-items-wrapper {
   display: flex;
@@ -359,9 +380,9 @@ button {
   align-content: center;
   align-items: center;
   width: 450px;
-  padding: 0 20px;
+  padding: 0 20px 0px;
   text-align: center;
-  border: 2px var(--color-gold) solid;
+  border: 3px var(--color-gold) solid;
 }
 
 .price-title {
@@ -372,7 +393,7 @@ button {
   line-height: 56px;
   letter-spacing: 0em;
   text-align: center;
-  padding-top: 42px;
+  padding-top: 40px;
   margin: 0;
   color: var(--color-white);
 }
@@ -397,9 +418,12 @@ button {
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0em;
-  text-align: center;
-  white-space: pre-line;
+  text-align: center;  
   margin: 20px 0;
+}
+
+.price-desc span {
+  display: block;
 }
 
 .price-item button {
@@ -428,13 +452,13 @@ button {
   line-height: 80px;
   letter-spacing: 0em;
   text-align: left;
-  padding: 0;
+  padding: 0 0 20px;
 }
 
 .send-form {
   margin: 0 auto;
   text-align: center;
-  padding: 20px 0 0 223px;
+  padding: 0px 0 0 223px;
 }
 
 .send-form input,
@@ -447,12 +471,12 @@ button {
   letter-spacing: 0em;
   text-align: left;
   color: var(--color-gold);
-  border: 3px var(--color-gold) solid;
+  border: 2px var(--color-gold) solid;
   width: 450px;
   height: 50px;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   resize: none;
-  padding-left: 17px;
+  padding: 3px 0 3px 18px;
 }
 
 .send-form textarea {
@@ -473,7 +497,7 @@ button {
 }
 
 .send-form button {
-  margin: 27px 0 0 -230px;
+  margin: 26px 0 0 -230px;
 }
 
 /* MAIN styles end */
@@ -481,18 +505,21 @@ button {
 
 .footer-container{
   display: flex;
-  height: 150px;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0em;
-  text-align: left;
+  height: 150px;  
   justify-content: space-between;
   align-items: center;
-  /* flex-direction: row; */
 }
+
+.footer-container a:hover {
+  color: var(--color-gold);
+  transition: .3s;
+}
+
+.footer-container p{
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 50px;
+  }
 
 .year {
   padding: 0 15px;
@@ -504,14 +531,21 @@ button {
 
 .social-links {
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
 }
 
-.social-links img{
-  /* height: 32px; */
-  /* width: 32px; */
-  /* margin-left: 20px; */
-  padding-top: 20px;
+.social-links svg{
+  width: 52px;
   padding-left: 20px;
+  padding-top: 15px;
+  fill: var(--color-white);
+}
+
+.social-links svg:hover{
+  fill: var(--color-gold);
+  transition: .3s;
 }
 
 /* FOOTER styles end */

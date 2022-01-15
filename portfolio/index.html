@@ -18,9 +18,12 @@
 <body>
 	<header class="header">
 		<div class="container header-container">
-
 			<nav class="nav">
-				<img class="logo" src="./assets/svg/logo.svg" alt="logo" width="50">
+				<a href="/">
+					<svg class="icon">
+						<use xlink:href="./assets/svg/sprite.svg#logo"></use>
+					</svg>
+				</a>
 				<ul class="nav-list">
 					<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
 					<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
@@ -94,6 +97,11 @@
 					<h2 class="section-title">Video</h2>
 				</div>
 				<div class="wedding-video-wrapper">
+					<button class="play-btn">
+						<svg class="icon">
+							<use xlink:href="./assets/svg/sprite.svg#play"></use>
+						</svg>
+					</button>
 				</div>
 			</section>
 			<section class="section" id="price">
@@ -104,33 +112,36 @@
 					<div class="price-item">
 						<p class="price-title">Standard</p>
 						<p class="price-amount">500 $</p>
-						<p class="price-desc">One location
-							120 photos in color
-							12 photos in retouch
-							Readiness 2-3 weeks
-							Make up, visage
+						<p class="price-desc">
+							<span>One location</span>
+							<span>120 photos in color</span>
+							<span>12 photos in retouch</span>
+							<span>Readiness 2-3 weeks</span>
+							<span>Make up, visage</span>
 						</p>
 						<button class="btn-gold">Order shooting</button>
 					</div>
 					<div class="price-item">
 						<p class="price-title">Premium</p>
 						<p class="price-amount">700 $</p>
-						<p class="price-desc">One or two locations
-							200 photos in color
-							20 photos in retouch
-							Readiness 1-2 weeks
-							Make up, visage
+						<p class="price-desc">
+							<span>One or two locations</span>
+							<span>200 photos in color</span>
+							<span>20 photos in retouch</span>
+							<span>Readiness 1-2 weeks</span>
+							<span>Make up, visage</span>
 						</p>
 						<button class="btn-gold">Order shooting</button>
 					</div>
 					<div class="price-item">
 						<p class="price-title">Gold</p>
 						<p class="price-amount">1000 $</p>
-						<p class="price-desc">Three locations or more
-							300 photos in color
-							50 photos in retouch
-							Readiness 1 week
-							Make up, visage, hairstyle
+						<p class="price-desc">
+							<span>Three locations or more</span>
+							<span>300 photos in color</span>
+							<span>50 photos in retouch</span>
+							<span>Readiness 1 week</span>
+							<span>Make up, visage, hairstyle</span>
 						</p>
 						<button class="btn-gold">Order shooting</button>
 					</div>
@@ -141,27 +152,46 @@
 			<section class="section" id="contacts">
 					<h2 class="contacts-title">Contact me</h2>					
 					<form class="send-form" action="#!">
-						<input type="text" id="email" name="email" placeholder="E-mail"><br>
-						<input type="text" id="phone" name="phone" placeholder="Phone"><br>
+						<input type="email" id="email" name="email" placeholder="E-mail"><br>
+						<input type="tel" id="phone" name="phone" placeholder="Phone"><br>
 						<textarea name="message" id="message" placeholder="Message"></textarea>
-						<button class="btn-gold" type="submit">Send message</button>
-					</form>					
+						<button class="btn-gold" type="submit">Send message</button>					</form>					
 			</section>
 		</div>
 	</main>
 	<footer class="footer">
 		<div class="container footer-container">
-			<p>© <span class="year">2022</span> github</p>
-			<p class="school">Rolling Scopes School</p>
-			<div class="social-links">
-				<a href="#!" target="_blank"><img src="./assets/svg/inst 1.svg" alt="logo instagam"></a>
-				<a href="#!" target="_blank"><img src="./assets/svg/fb 1.svg" alt="logo facebook"></a>
-				<a href="#!" target="_blank"><img src="./assets/svg/tw 1.svg" alt="logo twitter"></a>
-				<a href="#!" target="_blank"><img src="./assets/svg/pinterest 1.svg" alt="logo pinterest"></a>
-			</div>
+			<p><a href="https://github.com/anton-evol" target="_blank">© <span class="year">2022</span> github</a></p>
+			<p class="school"><a href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a></p>
+			<ul class="social-links">
+				<li><a href="#!" target="_blank">
+						<svg class="icon">
+							<use xlink:href="./assets/svg/sprite.svg#social_inst"></use>
+						</svg>
+					</a>
+				</li>
+				<li><a href="#!" target="_blank">
+						<svg class="icon">
+							<use xlink:href="./assets/svg/sprite.svg#social_fb"></use>
+						</svg>
+					</a>
+				</li>
+				<li><a href="#!" target="_blank">
+						<svg class="icon">
+							<use xlink:href="./assets/svg/sprite.svg#social_tw"></use>
+						</svg>
+					</a>
+				</li>
+				<li><a href="#!" target="_blank">
+						<svg class="icon">
+							<use xlink:href="./assets/svg/sprite.svg#social_pinterest"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</footer>
-	<script type="text/javascript" src="./index.js"></script>
+	<script src="./index.js"></script>
 </body>
 
 </html>
